@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="user.js" defer></script>
+    <script src="logout.js" defer></script>
+</head>
+<body>
+<!--Toolbar-->
+<div class="toolbar">
+    <div class="helloMessage"></div>
+    <div class="flex space-b">
+        <div class="toolbarMenu flex gap20">
+            <p class="toolbarMenuList"><a href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -1160 960 960" width="15px" fill="#FFFFFF"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></p>
+            <p class="toolbarMenuList"><a href="chat.html">Chat <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -1160 960 960" width="15px" fill="#FFFFFF"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></p>
+            <p class="toolbarMenuList"><a href="gallery.html">Gallery <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -1160 960 960" width="15px" fill="#FFFFFF"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></p>
+           </div>
+        <div class="logout">
+            Logout
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="logOutContainer d-none"></div>
+    <div class="grid">
+
+        <div class="flex gap50 ">
+            <div class="flex column gap20 ">
+                <div class="photoUser"></div>
+                <div class="changePhoto flex column gap20"><input placeholder="New photo url" type="text">
+                    <button>change photo</button>
+                </div>
+            </div>
+            <div class="userInfo flex column gap20">
+                <div class="email"></div>
+                <div class="changePsw flex column gap20"><input placeholder="New password">
+                    <button>Change Password</button>
+                    <div class="error"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

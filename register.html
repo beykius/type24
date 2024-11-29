@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+<div class="toolbar">
+    <a href="login.html">Login</a>
+</div>
+<div class="container">
+    <h2>Create an Account</h2>
+    <form action="/submit" method="post">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="error"></div>
+        <div class="register-button">
+            <button>Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
